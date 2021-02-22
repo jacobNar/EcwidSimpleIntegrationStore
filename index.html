@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Neon Lamps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script>
+        $(function(){
+            const options = {
+                method: 'GET',
+                mode: "no-cors",
+                headers: {
+                    
+                    'Authorization': "public_Hf7cyjc4nasLh1Q274mv32sgnBEaxXLs",
+                   
+			        'Content-Type': 'application/json'
+                }
+        
+        };
+
+        fetch('https://app.ecwid.com/api/v3/29458107/categories', options)
+        .then(response => console.log(response))
+        .catch(err => console.error(err));})
+    </script> -->
+<style>
+    
+    body {
+        font-family: 'Roboto';
+        padding: 0;
+        margin: 0
+    }
+    header {
+        background: black;
+        margin-bottom: 50px;
+
+    }
+    .grid__categories {
+        display: none !important;
+    }
+    html#ecwid_html body#ecwid_body .horizontal-menu-container.horizontal-desktop nav.horizontal-menu {
+        border: none !important;
+        background-color: black !important;
+        border-radius: 0 !important;
+    }
+
+    html#ecwid_html body#ecwid_body .horizontal-menu-container.horizontal-mobile{       
+        border: none !important;
+        background-color: black !important;
+        border-radius: 0 !important;
+    }
+
+    html#ecwid_html body#ecwid_body .horizontal-menu-container.horizontal-mobile .horizontal-menu-button {
+        color: white !important;
+    }
+
+    html#ecwid_html body#ecwid_body .horizontal-menu-container.horizontal-desktop .horizontal-menu-item>a{
+        color: white !important
+    }
+
+    html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default path[stroke], html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default circle[stroke]{
+        color: white !important;
+        stroke: white !important;
+    }
+</style>
+</head>
+<body class="container-fluid">
+<header class="row">
+    <div style="width: 70%">
+        <div id="my-categories-29458107"></div>
+    </div>
+    <!-- <div style="width: 20%">
+        <div id="my-search-29458107"></div>
+    </div> -->
+    <div style="width: 30%; padding-right: 10px;" class="text-right">
+        
+        <div class="ec-cart-widget"></div>
+    </div>
+    
+</header>
+<main class="container">
+    <section class="row">
+        <div class="col-sm-12">
+            <section id="my-categories-29458107"></section>
+            <div id="my-store-29458107"></div>
+        </div>
+    </section>
+    
+   
+</main>
+<section id="my-categories-29458107"></section>
+</body>
+
+<!-- Categories code -->
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?29458107&data_platform=code&data_date=2021-02-21" charset="utf-8"></script>
+<script type="text/javascript"> xCategoriesV2("id=my-categories-29458107"); </script>
+<!-- Product code -->
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?29458107&data_platform=code&data_date=2021-02-21" charset="utf-8"></script>
+<script type="text/javascript">Ecwid.init();</script>
+ <!-- footer code -->
+ <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?29458107&data_platform=code&data_date=2021-02-21" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-29458107");</script>
+ <!-- Search Code
+ <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?29458107&data_platform=code&data_date=2021-02-21" charset="utf-8"></script>
+<script type="text/javascript"> xSearch("id=my-search-29458107"); </script> -->
+ </html>
