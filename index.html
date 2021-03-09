@@ -36,8 +36,6 @@
     </script> -->
     <script>
         $(function (){
-            console.log(window.location.href)
-            debugger
             hideShowHero()
 
             window.onhashchange = function() { hideShowHero() };
@@ -45,7 +43,8 @@
         })
 
         function hideShowHero(){
-            if(window.location.href == "https://www.coolneonlamps.com/"){
+            //https://www.coolneonlamps.com/
+            if(window.location.href == "https://www.coolneonlamps.com/" || window.location.href == "https://www.coolneonlamps.com/index.html"){
                 $(".hero").show();
             }else {
                 $(".hero").hide()
@@ -124,7 +123,16 @@
         display: block;
     }
 
-    
+    footer {
+        background-color: black;
+        padding: 20px 0;
+        color: white
+    }
+
+    .social-logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
 </style>
 </head>
 <body class="container-fluid">
@@ -159,6 +167,15 @@
    
 </main>
 <section id="my-categories-29458107"></section>
+<footer class="row">
+    <div class="col-sm-12 text-center">
+
+        <h3>Check out our socials!</h3>
+        <a href="instagram.com"><img class="social-logo" src="images/instagram-logo.png" alt="Instgram logo. Link to Cool Neon Lamp's Instagram page"></a>
+        <a href="facebook.com"><img class="social-logo" src="images/facebook-logo.png" alt="Facebook logo. Link to Cool Neon Lamp's Facebook page"></a>
+    </div>
+
+</footer>
 </body>
 
 <!-- Categories code -->
